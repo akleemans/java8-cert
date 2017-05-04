@@ -31,7 +31,7 @@ public class StreamExample {
 
         // Create a stream with Stream.of(), collect elements for new list
         List<String> letterCodes2 = Stream.of("a2", "a4", "a4", "a5", "b5")
-                .filter(s -> s.startsWith("b"))
+                .filter(s -> s.startsWith("a"))
                 .collect(Collectors.toList());
 
         // change type of elements using map(), for example Integer => String
@@ -39,10 +39,9 @@ public class StreamExample {
                 .map(i -> i.toString())
                 .forEach(System.out::println);
 
-
         // reduce multiple elements to a single one using reduce()
         Integer sum = IntStream
-                .range(1, 100)
+                .range(1, 101) // start inclusive, end exclusive
                 .reduce(0, Integer::sum);
         System.out.println("Sum of numbers from 1 to 100: " + sum);
 
