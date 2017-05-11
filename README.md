@@ -38,6 +38,8 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [Java Docs on StringBuilder](https://docs.oracle.com/javase/tutorial/java/data/buffers.html)
 - [Formatting Print Output](https://docs.oracle.com/javase/tutorial/java/data/numberformat.html)
 - [The 'Immutable Interface' Pattern](https://en.wikipedia.org/wiki/Immutable_interface)
+- [Java packages overview](https://docs.oracle.com/javase/8/docs/api/)
+- [Java Class Library (JCL) - main features](https://en.wikipedia.org/wiki/Java_Class_Library#Main_features)
 
 ### TODO
 
@@ -45,6 +47,8 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [x] `transient` keyword
 - [x] Varargs
 - [x] Stringbuilder
+- [x] exact behaviour of `instanceof` (with `null` and usage on interfaces)
+- [x] packages & imports (static imports, important `java.*` packages)
 - [ ] Autoboxing, Unboxing
 - [ ] `Comparable` interface
 - [ ] `static` and `final` keywords. Final fields vs. methods vs. classes
