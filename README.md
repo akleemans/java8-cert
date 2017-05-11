@@ -40,11 +40,13 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [The 'Immutable Interface' Pattern](https://en.wikipedia.org/wiki/Immutable_interface)
 - [Java packages overview](https://docs.oracle.com/javase/8/docs/api/)
 - [Java Class Library (JCL) - main features](https://en.wikipedia.org/wiki/Java_Class_Library#Main_features)
+- [Data Access Object](https://de.wikipedia.org/wiki/Data_Access_Object)
+- [Liste von Entwurfsmustern](https://de.wikipedia.org/wiki/Entwurfsmuster#Liste_von_Mustern)
 
 ### TODO
 
 - [x] Access modifier review (`public`, `default`, `protected`, `private`)
-- [x] `transient` keyword
+- [x] `transient` keyword (= "field should not be serialized")
 - [x] Varargs
 - [x] Stringbuilder
 - [x] exact behaviour of `instanceof` (with `null` and usage on interfaces)
@@ -78,4 +80,6 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - Command line params start at `args[0]` and are always Strings.
 - "It is permitted, but discouraged as a matter of style, to redundantly specify the public and/or abstract modifier for a method declared in an interface."
 - "If you do not specify that the interface is public, then your interface is accessible only to classes defined in the same package as the interface."
-
+- "Static methods can not be overridden in the exact sense of the word, but they can hide parent static methods" ([source](http://stackoverflow.com/a/5436790/811708))
+- Enums can not have a public constructor. All Enum values ("inner subclasses") will be constructed the first time a Enum value is used.
+- "The first time that we ask for any of the `enum` values (of a certain Enum) Java constructs all of the `enum` values."
