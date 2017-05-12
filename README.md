@@ -42,6 +42,7 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [Java Class Library (JCL) - main features](https://en.wikipedia.org/wiki/Java_Class_Library#Main_features)
 - [Data Access Object](https://de.wikipedia.org/wiki/Data_Access_Object)
 - [Liste von Entwurfsmustern](https://de.wikipedia.org/wiki/Entwurfsmuster#Liste_von_Mustern)
+- [Scope of private constructor in nested class](http://stackoverflow.com/a/12542295/811708)
 
 ### TODO
 
@@ -83,3 +84,6 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - "Static methods can not be overridden in the exact sense of the word, but they can hide parent static methods" ([source](http://stackoverflow.com/a/5436790/811708))
 - Enums can not have a public constructor. All Enum values ("inner subclasses") will be constructed the first time a Enum value is used.
 - "The first time that we ask for any of the `enum` values (of a certain Enum) Java constructs all of the `enum` values."
+- "In Java 8, the 'effectively final' concept was introduced. If the code can still compile with the keyword `final` inserted before the local variable, the variable is effectively final." (study book)
+- Inner classes: "If the member or constructor is declared private, then access is permitted if and only if it occurs within the body of the top level class (§7.6) that encloses the declaration of the member or constructor." [source](http://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html#jls-6.6.1)
+- 'local inner class' = nested class defined within a method
