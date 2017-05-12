@@ -43,6 +43,7 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [Data Access Object](https://de.wikipedia.org/wiki/Data_Access_Object)
 - [Liste von Entwurfsmustern](https://de.wikipedia.org/wiki/Entwurfsmuster#Liste_von_Mustern)
 - [Scope of private constructor in nested class](http://stackoverflow.com/a/12542295/811708)
+- [Should an abstract class have at least one abstract method?](http://stackoverflow.com/questions/2283399/should-an-abstract-class-have-at-least-one-abstract-method)
 
 ### TODO
 
@@ -52,13 +53,13 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [x] Stringbuilder
 - [x] exact behaviour of `instanceof` (with `null` and usage on interfaces)
 - [x] packages & imports (static imports, important `java.*` packages)
+- [x] More keywords: `volatile`, `synchronized`, `transient`, `native`
 - [ ] Autoboxing, Unboxing
 - [ ] `Comparable` interface
-- [ ] `static` and `final` keywords. Final fields vs. methods vs. classes
+- [ ] `static`, `abstract` and `final` keywords. Final fields vs. methods vs. classes
 - [ ] `Serializable`, `writeObject()
 - [ ] Review: `abstract` classes vs. interfaces
 - [ ] Review: java.lang.Object & overridable methods
-- [ ] More keywords: `volatile`, `static`, `abstract`, `final`, `synchronized`, `transient`, `native`
 - [ ] Review: Inheritance & interfaces
 - [ ] Java 8: Interfaces with default method implementation
 - [ ] Collection API: set vs. map), lower/upper/wildcard bound
@@ -87,3 +88,8 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - "In Java 8, the 'effectively final' concept was introduced. If the code can still compile with the keyword `final` inserted before the local variable, the variable is effectively final." (study book)
 - Inner classes: "If the member or constructor is declared private, then access is permitted if and only if it occurs within the body of the top level class (§7.6) that encloses the declaration of the member or constructor." [source](http://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html#jls-6.6.1)
 - 'local inner class' = nested class defined within a method
+- Floats (for example) as class variables (not local ones) will be initialized with `0.0`, but not inside a method!
+- In a concrete class, all methods and Constructors must contain bodies.
+- A class cannot include package or import statements. (class itself not, but file that contains class)
+- (`abstract`) classes can be **extended**, `interfaces` can be implemented (or `extended`, if you're an `interface` yourself). In other words, valid examples are: `interface extends interface` / `class extends class` / `class implements interface`.
+
