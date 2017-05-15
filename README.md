@@ -53,7 +53,7 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [x] Stringbuilder
 - [x] exact behaviour of `instanceof` (with `null` and usage on interfaces)
 - [x] packages & imports (static imports, important `java.*` packages)
-- [x] More keywords: `volatile`, `synchronized`, `transient`, `native`
+- [x] More keywords: `synchronized`, `transient`, `native`
 - [ ] Autoboxing, Unboxing
 - [ ] `Comparable` interface
 - [ ] `static`, `abstract` and `final` keywords. Final fields vs. methods vs. classes
@@ -72,6 +72,9 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [ ] Review: Inner classes
 - [ ] Review: Generics, generic classes/interfaces, usage
 - [ ] Generics: Wildcards
+
+Not part of the exam:
+- `volatile` keyword
 
 ### Lessons learned / pitfalls
 - toString on Enums will print String, not ordinal
