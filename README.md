@@ -92,4 +92,4 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - In a concrete class, all methods and Constructors must contain bodies.
 - A class cannot include package or import statements. (class itself not, but file that contains class)
 - (`abstract`) classes can be **extended**, `interfaces` can be implemented (or `extended`, if you're an `interface` yourself). In other words, valid examples are: `interface extends interface` / `class extends class` / `class implements interface`.
-
+- "A JavaBean is a design principle for encapsulating data in an object in Java."
