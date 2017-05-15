@@ -97,6 +97,8 @@ Not part of the exam:
 - (`abstract`) classes can be **extended**, `interfaces` can be implemented (or `extended`, if you're an `interface` yourself). In other words, valid examples are: `interface extends interface` / `class extends class` / `class implements interface`.
 - "A JavaBean is a design principle for encapsulating data in an object in Java."
 - A new `public StringBuilder()` has initial capacity of 16 characters.
+- Parentheses for Lambda parameter: can be omitted only if one parameter (not if 0 or 2+) and there is no type given.
+- "Tight coupling is the practice of developing coupled classes that are highly dependent, such that a minor change in one class may greatly impact the other class. Alternatively, loose coupling is the practice of developing coupled classes with minimum dependencies on one another."
 
 #### Access modifiers
 
