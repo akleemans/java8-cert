@@ -1,4 +1,4 @@
-package ch.diso.javacert.basics;
+package ch.diso.javacert.examples;
 
 import java.util.ArrayList;
 import java.util.Comparator;

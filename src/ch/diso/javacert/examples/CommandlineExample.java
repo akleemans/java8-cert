@@ -1,4 +1,4 @@
-package ch.diso.javacert.basics;
+package ch.diso.javacert.examples;
 
 public class CommandlineExample {
 
@@ -6,7 +6,7 @@ public class CommandlineExample {
     Compile Java class with:
         javac CommandlineExample.java
     Run Java class with (from within src directory):
-        java ch.diso.javacert.basics.CommandlineExample arg1 arg2
+        java ch.diso.javacert.examples.CommandlineExample arg1 arg2
 
     See what it prints out. Class name is not part of the arguments!
  */

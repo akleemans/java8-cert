@@ -1,4 +1,4 @@
-package ch.diso.javacert.lambdas;
+package ch.diso.javacert.examples;
 
 public class Person {
 

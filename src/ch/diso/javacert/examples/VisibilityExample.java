@@ -1,4 +1,4 @@
-package ch.diso.javacert.basics;
+package ch.diso.javacert.examples;
 
 public class VisibilityExample {
 

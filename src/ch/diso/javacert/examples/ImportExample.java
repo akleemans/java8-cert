@@ -1,4 +1,4 @@
-package ch.diso.javacert.basics;
+package ch.diso.javacert.examples;
 
 // static import of static class member
 import static java.lang.Math.PI;

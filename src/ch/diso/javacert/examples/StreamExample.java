@@ -1,4 +1,4 @@
-package ch.diso.javacert.streams;
+package ch.diso.javacert.examples;
 
 import java.util.Arrays;
 import java.util.List;
