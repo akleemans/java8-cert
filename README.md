@@ -195,3 +195,10 @@ Not part of the exam:
       * java.lang.SecurityException
       * java.lang.TypeNotPresentException
       * java.lang.UnsupportedOperationException
+
+#### Creational patterns
+- **Singleton pattern**: Only one instance of a Singleton class may exist at runtime.
+- **Immutable pattern**: Read-only objects.
+- **Builder pattern**: Enrich object with attributes through setters (chainable) and create instance with `build()`
+- **Factory pattern**: Return different object types, based on given criteria, for example `PetFactory` which returns either a `Dog` or `Cat` instance.
+
