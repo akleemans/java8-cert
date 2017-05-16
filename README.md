@@ -44,6 +44,7 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [Liste von Entwurfsmustern](https://de.wikipedia.org/wiki/Entwurfsmuster#Liste_von_Mustern)
 - [Scope of private constructor in nested class](http://stackoverflow.com/a/12542295/811708)
 - [Should an abstract class have at least one abstract method?](http://stackoverflow.com/questions/2283399/should-an-abstract-class-have-at-least-one-abstract-method)
+- [Information & changes to exam topics](https://www.selikoff.net/java-ocp-8-programmer-ii-study-guide/)
 
 ### TODO
 
@@ -100,6 +101,8 @@ Not part of the exam:
 - Parentheses for Lambda parameter: can be omitted only if one parameter (not if 0 or 2+) and there is no type given.
 - "Tight coupling is the practice of developing coupled classes that are highly dependent, such that a minor change in one class may greatly impact the other class. Alternatively, loose coupling is the practice of developing coupled classes with minimum dependencies on one another."
 
+### Random facts & tables
+
 #### Access modifiers
 
 | Modifier   | Class | Package | Subclass | World |
@@ -108,4 +111,27 @@ Not part of the exam:
 | protected  | Y     | Y       | Y        | N     |
 | no modifier| Y     | Y       | N        | N     |
 | private    | Y     | N       | N        | N     |
+
+#### Functional Interfaces
+
+| Functional Interface   | # Parameters | Return Type | Single Abstract Method |
+|------------------------|:------------:|:-----------:|:----------------------:|
+| `Supplier<T>`          | 0            | T           | get                    |
+| `Consumer<T>`          | 1 (T)        | void        | accept                 |
+| `BiConsumer<T, U>`     | 2 (T, U)     | void        | accept                 |
+| `Predicate<T>`         | 1 (T)        | boolean     | test                   |
+| `BiPredicate<T, U>`    | 2 (T, U)     | boolean     | test                   |
+| `Function<T>`          | 1 (T)        | R           | apply                  |
+| `BiFunction<T, U>`     | 2 (T, U)     | R           | apply                  |
+| `UnaryOperator<T>`     | 1 (T)        | T           | apply                  |
+| `BinaryOperator<T, U>` | 2 (T, U)     | T           | apply                  |
+
+#### Generics naming conventions
+
+* `E` for an element
+* `K` for a map key
+* `V` for a map value
+* `N` for a number
+* `T` for a generic data type
+* `S`, `U`, `V`, and so forth for multiple generic types
 
