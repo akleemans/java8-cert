@@ -46,6 +46,7 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [Should an abstract class have at least one abstract method?](http://stackoverflow.com/questions/2283399/should-an-abstract-class-have-at-least-one-abstract-method)
 - [Information & changes to exam topics](https://www.selikoff.net/java-ocp-8-programmer-ii-study-guide/)
 - [Unbound wildcard `<?>` vs `<T>`](http://stackoverflow.com/questions/18787393/java-unbound-wildcard-vs-t)
+- [Static Initialization Blocks](http://stackoverflow.com/questions/2420389/static-initialization-blocks)
 
 ### TODO
 
