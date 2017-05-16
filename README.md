@@ -45,6 +45,7 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [Scope of private constructor in nested class](http://stackoverflow.com/a/12542295/811708)
 - [Should an abstract class have at least one abstract method?](http://stackoverflow.com/questions/2283399/should-an-abstract-class-have-at-least-one-abstract-method)
 - [Information & changes to exam topics](https://www.selikoff.net/java-ocp-8-programmer-ii-study-guide/)
+- [Unbound wildcard `<?>` vs `<T>`](http://stackoverflow.com/questions/18787393/java-unbound-wildcard-vs-t)
 
 ### TODO
 
@@ -135,3 +136,61 @@ Not part of the exam:
 * `T` for a generic data type
 * `S`, `U`, `V`, and so forth for multiple generic types
 
+#### Exception hierarchy
+* java.lang.Throwable (implements java.io.Serializable)
+  * java.lang.Error
+  * java.lang.Exception
+    * java.lang.CloneNotSupportedException
+    * java.lang.InterruptedException
+    * java.lang.ReflectiveOperationException
+      * java.lang.ClassNotFoundException
+      * java.lang.IllegalAccessException
+      * java.lang.InstantiationException
+      * java.lang.NoSuchFieldException
+      * java.lang.NoSuchMethodException
+    * **java.io.IOException**
+      * java.nio.file.attribute.UserPrincipalNotFoundException
+      * java.io.EOFException
+      * java.io.FileNotFoundException
+      * java.net.MalformedURLException
+      * java.rmi.RemoteException
+      * java.net.SocketException
+      * javax.net.ssl.SSLException
+      * java.net.UnknownHostException
+      * java.io.UnsupportedEncodingException
+      * ...
+    * **java.sql.SQLException**
+      * java.sql.SQLTransientException
+      * javax.sql.rowset.serial.SerialException
+      * java.sql.SQLClientInfoException
+      * ...
+    * **java.lang.instrument.IllegalClassFormatException**
+    * **java.awt.AWTException**
+    * **javax.management.BadStringOperationException**
+    * **javax.security.cert.CertificateException**
+    * **java.util.zip.DataFormatException**
+    * **javax.naming.NamingException**
+    * **java.rmi.NotBoundException**
+    * **java.text.ParseException**
+    * **javax.print.PrintException**
+    * **java.util.TooManyListenersException**
+    * **javax.management.modelmbean.XMLParseException**
+    * ...
+    * java.lang.RuntimeException
+      * java.lang.ArithmeticException
+      * java.lang.ArrayStoreException
+      * java.lang.ClassCastException
+      * java.lang.EnumConstantNotPresentException
+      * java.lang.IllegalArgumentException
+        * java.lang.IllegalThreadStateException
+        * java.lang.NumberFormatException
+      * java.lang.IllegalMonitorStateException
+      * java.lang.IllegalStateException
+      * java.lang.IndexOutOfBoundsException
+        * java.lang.ArrayIndexOutOfBoundsException
+        * java.lang.StringIndexOutOfBoundsException
+      * java.lang.NegativeArraySizeException
+      * java.lang.NullPointerException
+      * java.lang.SecurityException
+      * java.lang.TypeNotPresentException
+      * java.lang.UnsupportedOperationException
