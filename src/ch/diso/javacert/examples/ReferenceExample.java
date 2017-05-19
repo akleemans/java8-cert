@@ -24,7 +24,7 @@ public class ReferenceExample {
     public static void main(String[] args) {
         ReferenceExample referenceExample = new ReferenceExample();
 
-        // object will
+        // object will have all methods from Ant available (object is Ant, reference is Ant too)
         Ant ant = referenceExample.new Ant();
 
         // Because reference is also Ant, we can access all methods which Ant has through inheritance:
