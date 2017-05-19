@@ -28,6 +28,9 @@ public class CollectorExample {
         System.out.println("Partitioning by Predicate, if name is Eric: " + nameStream
                 .collect(Collectors.partitioningBy(s -> s.startsWith("Eric"))));
 
+        // .toSet() collector
+        System.out.println("Converting list to set: " + Stream.of(names).collect(Collectors.toSet()));
+
         // trying to access already closed stream: "IllegalStateException: stream has already been operated upon or closed"
         //nameStream.forEach(System.out::println); // will compile, but throws RuntimeException
     }
