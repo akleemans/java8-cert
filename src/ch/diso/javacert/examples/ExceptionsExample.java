@@ -1,7 +1,6 @@
 package ch.diso.javacert.examples;
 
 import java.io.IOException;
-import java.io.NotSerializableException;
 import java.sql.SQLException;
 import java.text.ParseException;
 

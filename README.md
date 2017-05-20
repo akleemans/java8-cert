@@ -47,6 +47,8 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [Information & changes to exam topics](https://www.selikoff.net/java-ocp-8-programmer-ii-study-guide/)
 - [Unbound wildcard `<?>` vs `<T>`](http://stackoverflow.com/questions/18787393/java-unbound-wildcard-vs-t)
 - [Static Initialization Blocks](http://stackoverflow.com/questions/2420389/static-initialization-blocks)
+- [Why to use `finally`](http://stackoverflow.com/questions/3354823/how-to-use-finally)
+- [Java Docs on Autoboxing](https://docs.oracle.com/javase/8/docs/technotes/guides/language/autoboxing.html)
 
 ### TODO
 
@@ -57,17 +59,17 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [x] exact behaviour of `instanceof` (with `null` and usage on interfaces)
 - [x] packages & imports (static imports, important `java.*` packages)
 - [x] More keywords: `synchronized`, `transient`, `native`
-- [ ] Autoboxing, Unboxing
+- [x] Review: java.lang.Object & overridable methods
+- [x] Review: Inheritance & interfaces
+- [x] Java 8: Interfaces with default method implementation
+- [x] Review Exceptions, exception hierarchy tree
+- [x] Autoboxing, Unboxing
 - [ ] `Comparable` interface
 - [ ] `static`, `abstract` and `final` keywords. Final fields vs. methods vs. classes
-- [ ] `Serializable`, `writeObject()
+- [ ] `Serializable`, `writeObject()`
 - [ ] Review: `abstract` classes vs. interfaces
-- [ ] Review: java.lang.Object & overridable methods
-- [ ] Review: Inheritance & interfaces
-- [ ] Java 8: Interfaces with default method implementation
 - [ ] Collection API: set vs. map), lower/upper/wildcard bound
-- [ ] Design Patterns?
-- [ ] Review Exceptions, exception hierarchy tree
+- [ ] Design Patterns: Singleton & Immutable creational patterns
 - [ ] Annotations on Java Types
 - [ ] Repeating annotations
 - [ ] Reflection: access to parameter names at runtime
