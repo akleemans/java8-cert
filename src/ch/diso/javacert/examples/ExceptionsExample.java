@@ -12,8 +12,10 @@ public class ExceptionsExample {
             testIO();
             testParsing();
             testSQL();
+            testOwnExceptions();
         }
-        // 3 checked exceptions: IO, Parse, SQL
+        // 3 standard checked exceptions: IO, Parse, SQL. We're only allowed to catch
+        // these because are methods are declared to potentially throw them.
         catch (IOException e) {
         }
         // we can also catch two Exceptions with one catch clause
@@ -24,7 +26,9 @@ public class ExceptionsExample {
         // Only possible in this order (get evaluated that way): A more general exception
         catch (RuntimeException e) {
         }
-        // catch an even more general exception
+        // Catch even more general exception (in fact, all of them).
+        // Notice that without this line the code would not compile or
+        // MyCheckedException would have to be caught separately.
         catch (Exception e) {
         }
         // finally: always execute
@@ -47,4 +51,15 @@ public class ExceptionsExample {
         // throw a new SQLException which the caller has to handle.
         throw new SQLException("SQL error!");
     }
+
+    // can also throw multiple exception
+    private static void testOwnExceptions() throws MyCheckedException, MyUncheckedException {
+        System.out.println("Could throw a custom exception.");
+    }
+}
+
+class MyCheckedException extends Exception {
+}
+
+class MyUncheckedException extends RuntimeException {
 }
