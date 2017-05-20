@@ -137,64 +137,28 @@ Not part of the exam:
 * `T` for a generic data type
 * `S`, `U`, `V`, and so forth for multiple generic types
 
-#### Exception hierarchy
-* java.lang.Throwable (implements java.io.Serializable)
-  * java.lang.Error
-  * java.lang.Exception
-    * java.lang.CloneNotSupportedException
-    * java.lang.InterruptedException
-    * java.lang.ReflectiveOperationException
-      * java.lang.ClassNotFoundException
-      * java.lang.IllegalAccessException
-      * java.lang.InstantiationException
-      * java.lang.NoSuchFieldException
-      * java.lang.NoSuchMethodException
-    * **java.io.IOException**
-      * java.nio.file.attribute.UserPrincipalNotFoundException
-      * java.io.EOFException
-      * java.io.FileNotFoundException
-      * java.net.MalformedURLException
-      * java.rmi.RemoteException
-      * java.net.SocketException
-      * javax.net.ssl.SSLException
-      * java.net.UnknownHostException
-      * java.io.UnsupportedEncodingException
-      * ...
-    * **java.sql.SQLException**
-      * java.sql.SQLTransientException
-      * javax.sql.rowset.serial.SerialException
-      * java.sql.SQLClientInfoException
-      * ...
-    * **java.lang.instrument.IllegalClassFormatException**
-    * **java.awt.AWTException**
-    * **javax.management.BadStringOperationException**
-    * **javax.security.cert.CertificateException**
-    * **java.util.zip.DataFormatException**
-    * **javax.naming.NamingException**
-    * **java.rmi.NotBoundException**
-    * **java.text.ParseException**
-    * **javax.print.PrintException**
-    * **java.util.TooManyListenersException**
-    * **javax.management.modelmbean.XMLParseException**
-    * ...
-    * java.lang.RuntimeException
-      * java.lang.ArithmeticException
-      * java.lang.ArrayStoreException
-      * java.lang.ClassCastException
-      * java.lang.EnumConstantNotPresentException
-      * java.lang.IllegalArgumentException
-        * java.lang.IllegalThreadStateException
-        * java.lang.NumberFormatException
-      * java.lang.IllegalMonitorStateException
-      * java.lang.IllegalStateException
-      * java.lang.IndexOutOfBoundsException
-        * java.lang.ArrayIndexOutOfBoundsException
-        * java.lang.StringIndexOutOfBoundsException
-      * java.lang.NegativeArraySizeException
-      * java.lang.NullPointerException
-      * java.lang.SecurityException
-      * java.lang.TypeNotPresentException
-      * java.lang.UnsupportedOperationException
+#### Exceptions for OCP
+
+Checked:
+* `java.text.ParseException`
+* `java.io.IOException` (generally all checked)
+  * `java.io.FileNotFoundException`
+  * `java.io.NotSerializableException`
+* `java.sql.SQLException`
+
+Unchecked:
+* `java.lang.ArithmeticException`
+* `java.lang.ArrayIndexOutOfBoundsException`
+* `java.lang.ClassCastException`
+* `java.lang.IllegalArgumentException`
+* `java.lang.NullPointerException`
+* `java.lang.NumberFormatException`
+* `java.lang.ArrayStoreException`
+* `java.lang.DateTimeException`
+* `java.lang.MissingResourceException`
+* `java.lang.IllegalStateException`
+* `java.lang.UnsupportedOperationException`
+
 
 #### Creational patterns
 - **Singleton pattern**: Only one instance of a Singleton class may exist at runtime.
