@@ -59,6 +59,8 @@ class NumberCounter extends RecursiveTask<Long> {
 
     @Override
     protected Long compute() {
+        // Main routine to decide whether to divide (spawn new sub-processes)
+        // or conquer (compute result, base case).
         if (to - from < threshold) {
             System.out.println("Feeling confident, summing up numbers from " + from + " to " + to);
             long sum = 0;
@@ -69,8 +71,12 @@ class NumberCounter extends RecursiveTask<Long> {
         } else {
             System.out.println("Too much numbers, distributing " + from + " to " + to);
             long middle = from + ((to - from) / 2);
+            // prepare a second Task and fork()
             RecursiveTask<Long> secondTask = new NumberCounter(from, middle);
             secondTask.fork();
+            // Initialize second task, compute result directly and 'join' result from task before.
+            // .join(): Returns the result of the computation when it is done.
+            // (Like get(), but without checked exceptions).
             return new NumberCounter(middle, to).compute() + secondTask.join();
         }
     }
