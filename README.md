@@ -169,3 +169,12 @@ Unchecked:
 - **Builder pattern**: Enrich object with attributes through setters (chainable) and create instance with `build()`
 - **Factory pattern**: Return different object types, based on given criteria, for example `PetFactory` which returns either a `Dog` or `Cat` instance.
 
+####
+Steps to make a class immutable:
+ 1. Use a constructor to set all properties of the object
+ 2. Mark all instance variables as `private` and `final`
+ 3. Don't define any setter methods
+ 4. Don't allow referenced mutable objects to be modified or accessed directly
+ 5. Prevent methods from being overriden
+ 
+ 
