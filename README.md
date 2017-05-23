@@ -49,6 +49,7 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [Static Initialization Blocks](http://stackoverflow.com/questions/2420389/static-initialization-blocks)
 - [Why to use `finally`](http://stackoverflow.com/questions/3354823/how-to-use-finally)
 - [Java Docs on Autoboxing](https://docs.oracle.com/javase/8/docs/technotes/guides/language/autoboxing.html)
+- [Java Docs on `Collections.binarySearch()`](http://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#binarySearch-java.util.List-T-)
 
 ### TODO
 
