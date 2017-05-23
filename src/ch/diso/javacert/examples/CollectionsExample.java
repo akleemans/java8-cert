@@ -2,7 +2,7 @@ package ch.diso.javacert.examples;
 
 import java.util.*;
 
-public class CollectionExample {
+public class CollectionsExample {
 
     public static void main(String[] args) {
 
