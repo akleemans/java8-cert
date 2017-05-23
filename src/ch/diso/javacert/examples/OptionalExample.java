@@ -56,6 +56,14 @@ public class OptionalExample {
             System.out.println("There was an exception, no value found on optionalThree...");
         }
 
-    }
+        // ofNullable()
+        Optional<Integer> number = Optional.ofNullable(null);
+        System.out.println("number: " + number);
 
+        // orElseGet() with Supplier
+        int n = number.orElseGet(() -> {
+            return 42;
+        });
+        System.out.println("n is now either number or 42: " + n);
+    }
 }
