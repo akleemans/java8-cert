@@ -72,5 +72,33 @@ public class CollectionsExample2 {
         });
         // No printing -> because 5 does not exists as key, it just gets added without the merge function being called!
         System.out.println("New HashMap is now: " + map);
+
+
+        // Queue vs. Dequeue
+        System.out.println("\nQueue vs. Deque.");
+        Queue<String> queue = new LinkedList<>();
+        // Queue: offer, peek, poll
+        System.out.println("Offering a, b, c to queue.");
+        queue.offer("a");
+        queue.offer("b");
+        queue.offer("c");
+
+        System.out.println("queue: " + queue);
+        System.out.println("Polling: " + queue.poll());
+        System.out.println("Peeking: " + queue.peek());
+        System.out.println("Queue => waiting queue = FIFO");
+
+
+        // Deque: offer/push, peek, pop
+        Deque<String> deque = new ArrayDeque<>();
+        System.out.println("Offering a, b, c to deque.");
+        deque.push("a");
+        deque.push("b");
+        deque.push("c");
+
+        System.out.println("deque: " + deque);
+        System.out.println("Polling: " + deque.pop());
+        System.out.println("Peeking: " + deque.peek());
+        System.out.println("Deque => Stack = LIFO");
     }
 }
