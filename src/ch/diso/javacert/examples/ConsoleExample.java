@@ -14,6 +14,7 @@ public class ConsoleExample {
         Console console = System.console();
         if (console == null) {
             System.out.println("Could not obtain console instance.");
+            throw new IllegalStateException();
         }
 
         String line = console.readLine("Please enter a line and finish with Enter: ");
