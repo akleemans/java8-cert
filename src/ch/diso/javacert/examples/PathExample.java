@@ -86,5 +86,12 @@ public class PathExample {
 
         // Does file exist?
         System.out.println("Userhome exists: " + Files.exists(complicatedUserhome));
+
+        // Another example for relativize
+        Path relpath = Paths.get("/usr/.././etc", "../logfile.txt");
+        relpath = relpath.normalize();
+        System.out.println("Logfile is in root: " + relpath);
+        relpath = relpath.relativize(Paths.get("/mydir"));
+        System.out.println("Relative path: .. for directory, then into mydir " + relpath);
     }
 }
