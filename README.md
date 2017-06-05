@@ -50,6 +50,7 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [Why to use `finally`](http://stackoverflow.com/questions/3354823/how-to-use-finally)
 - [Java Docs on Autoboxing](https://docs.oracle.com/javase/8/docs/technotes/guides/language/autoboxing.html)
 - [Java Docs on `Collections.binarySearch()`](http://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#binarySearch-java.util.List-T-)
+- [Java Docs on Numbers Classes](https://docs.oracle.com/javase/tutorial/java/data/numberclasses.html)
 
 ### TODO
 
@@ -65,22 +66,16 @@ Some code for practicing for the Java 8 OCP / Java SE 8 Programmer (1Z0-809).
 - [x] Java 8: Interfaces with default method implementation
 - [x] Review Exceptions, exception hierarchy tree
 - [x] Autoboxing, Unboxing
-- [ ] `Comparable` interface
-- [ ] `static`, `abstract` and `final` keywords. Final fields vs. methods vs. classes
-- [ ] `Serializable`, `writeObject()`
-- [ ] Review: `abstract` classes vs. interfaces
-- [ ] Collection API: set vs. map), lower/upper/wildcard bound
-- [ ] Design Patterns: Singleton & Immutable creational patterns
-- [ ] Annotations on Java Types
-- [ ] Repeating annotations
-- [ ] Reflection: access to parameter names at runtime
-- [ ] Review: Singleton classes
-- [ ] Review: Inner classes
-- [ ] Review: Generics, generic classes/interfaces, usage
-- [ ] Generics: Wildcards
-
-Not part of the exam:
-- `volatile` keyword
+- [x] `Comparable` interface
+- [x] `static`, `abstract` and `final` keywords. Final fields vs. methods vs. classes
+- [x] `Serializable`, `writeObject()`
+- [x] Review: `abstract` classes vs. interfaces
+- [x] Collection API: set vs. map), lower/upper/wildcard bound
+- [x] Design Patterns: Singleton & Immutable creational patterns
+- [x] Review: Singleton classes
+- [x] Review: Inner classes
+- [x] Review: Generics, generic classes/interfaces, usage
+- [x] Generics: Wildcards
 
 ### Lessons learned / pitfalls
 - toString on Enums will print String, not ordinal
@@ -105,6 +100,8 @@ Not part of the exam:
 - A new `public StringBuilder()` has initial capacity of 16 characters.
 - Parentheses for Lambda parameter: can be omitted only if one parameter (not if 0 or 2+) and there is no type given.
 - "Tight coupling is the practice of developing coupled classes that are highly dependent, such that a minor change in one class may greatly impact the other class. Alternatively, loose coupling is the practice of developing coupled classes with minimum dependencies on one another."
+- "An instant is a point in time. A LocalDateTime does not contain a time zone, and is therefore not universally recognized around the world as the same moment in time."
+- "The `CyclicBarrier` class allows us to perform complex, multi-threaded tasks, while all threads stop and wait at logical barriers."
 
 ### Random facts & tables
 
@@ -164,17 +161,33 @@ Unchecked:
 
 
 #### Creational patterns
+
 - **Singleton pattern**: Only one instance of a Singleton class may exist at runtime.
 - **Immutable pattern**: Read-only objects.
 - **Builder pattern**: Enrich object with attributes through setters (chainable) and create instance with `build()`
 - **Factory pattern**: Return different object types, based on given criteria, for example `PetFactory` which returns either a `Dog` or `Cat` instance.
 
-####
+#### Immutable class
+
 Steps to make a class immutable:
  1. Use a constructor to set all properties of the object
  2. Mark all instance variables as `private` and `final`
  3. Don't define any setter methods
  4. Don't allow referenced mutable objects to be modified or accessed directly
  5. Prevent methods from being overriden
+
+
+#### Picking a resource bundle
  
- 
+Rules for picking a resource bundle:
+  1. The requested locale as `.java`-File
+  2. The requested locale as `.properties`-File
+  3. Only requested language (no country) as `.java`-File
+  4. Only requested language (no country) as `.properties`-File
+  5. The default locale as `.java`-File
+  6. The default locale as `.properties`-File
+  7. Only default language (no country) as `.java`-File
+  8. Only default language (no country) as `.properties`-File
+  9. The default bundle with no locale as `.java`-File
+  10. The default bundle with no locale as `.properties`-File
+  11. A `MissingResourceException` is thrown.
